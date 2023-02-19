@@ -21,10 +21,12 @@ export default {
                 </div>
                 <div class="card-text pb-3">
                     <span>description: </span>
-                    <span>{{ project.description.slice(0, 20) }}...</span>
-                    <br>
+                    <span class="d-block p-2">{{ project.description.slice(0, 20) }}...</span>
                     <span>github: </span>
-                    <span class="d-block">{{ project.github_link }}</span>
+                    <button class="btn btn-primary">
+                        <a class="text-white" href="{{ project.github_link }}">Link gitHub</a>
+                    </button>
+                    <span class="d-block"></span>
                 </div>
             </div>
         </div>
