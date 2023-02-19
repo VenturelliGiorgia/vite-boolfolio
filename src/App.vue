@@ -1,9 +1,10 @@
 <script>
-import TheCard from "./components/TheCard.vue";
+import ProjectCard from "./components/ProjectCard.vue";
+import TheHeader from "./components/TheHeader.vue";
 import axios from "axios";
 
 export default {
-  components: { TheCard },
+  components: { ProjectCard, TheHeader },
 
   data() {
     return {
@@ -30,12 +31,13 @@ export default {
 </script>
 
 <template>
+  <TheHeader></TheHeader>
   <div class="container">
-    <div>
+    <div  class="py-3">
       <h1>I tuoi progetti</h1>
     </div>
 
-    <TheCard :projects="projects"></TheCard>
+    <ProjectCard :projects="projects"></ProjectCard>
   </div>
 </template>
 
