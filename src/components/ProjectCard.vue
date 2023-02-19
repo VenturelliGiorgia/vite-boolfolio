@@ -7,8 +7,8 @@ export default {
 </script>
 
 <template>
-    <div class="row">
-        <div class="col-3" v-for="project in projects" :key="project.id">
+    <div class="row g-3">
+        <div class="col-12 col-sm-6 col-md-4" v-for="project in projects" :key="project.id">
             <div class="card text-center">
                 <div class="card-img-top">
                     <img  class="img-fluid" :src="`http://127.0.0.1:8000/storage/${project.cover_img}`" alt=""/>
